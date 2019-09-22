@@ -1,0 +1,72 @@
+<!-- file tips.html-->
+<!DOCTYPE html>
+
+<html lang="en">
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>Bill splitter</title> 
+        <style>
+        body {background-color: lightgray;}    
+        .button { /** button class**/
+            background-color: lightgreen;
+            border:2px solid gray;
+            color:black;
+            padding:1;
+            text-align: center;
+            text-decoration: none;
+            }
+        #header{
+            font: 25px "courier new", sans-serif;	
+            border-radius: 5px;border-style: groove; border-color: black; border-width: 5px;
+            background: lightgreen;
+            padding:4px;
+            width: 300px;
+            height: 32px;
+            text-align: center;
+            }
+        #main{
+            font: 16px "courier new", sans-serif;	
+            border-radius: 5px;border-style: groove; border-color: black; border-width: 5px;
+            background: lightgreen;
+            padding:4px;
+            width: 300px;
+            height: 220px;
+            text-align:left;
+            }
+        #result{
+            font: 16px "courier new", sans-serif;	
+            border-radius: 5px;border-style: groove; border-color: black; border-width: 5px;
+            background:lightgreen;
+            padding:4px;
+            width: 300px;
+            height: 20px;
+            text-align:center;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div id="header"> <b><i>Split / the / Bill</i></b></div>
+        <br>
+        <div id="main">
+            <p><b>Enter bill value (Incl Vat);</b><br><Input id= "bill" size="4" value=100></p>
+            <p><b>Enter tip percentage;</b><br><Input id="tip" size = "2" value=12.5>%</p>
+            <p><b>Split over how many?</b><br> <input id="split" size="4" value =1></p>
+            
+            <button id="Calculate" class="button" >Click here to calculate</button>
+            
+        </div>
+
+        <h4><div id="result"> </div></h4>
+
+        <h6><br>tips ver 1.1a RtJ</h6>
+
+        <script src="tips.js"></script>
+
+
+    </body>
+</html>

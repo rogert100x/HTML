@@ -1,0 +1,65 @@
+<!-- cyclepower.html-->
+
+<html lang="en">  
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script> <!--Using ChartJS-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Calculate Wattage required to cycle at specified speed</title>
+<style>
+#main{
+  font: 15px verdana, sans-serif;	
+  border-radius: 30px;border-style: solid;
+  background: White;
+  padding: 0px;
+  width: 350px;
+  height: 300px;
+}
+#result{
+  font: 12px verdana, sans-serif;	
+  border-radius: 15px;border-style: none;
+  background: white;
+  width: 350px;
+  height: 60px;
+}
+#list{
+  font: 12px verdana, sans-serif;
+  border-radius: 15px;border-style: none;
+  background: white;
+  width: 350px;
+  height: 170px;
+}
+#graphic{
+  font: 10px verdana, sans-serif;	
+  border-radius: 0px;border-style: none;
+  background: white;
+  padding: 0px;
+  width: 850px;
+  height: 750px;
+}
+</style>
+</head>
+<body>
+	<div id="main" align="center">
+		<h4>This app will return the power ( in watts) to cycle at specified<br> 
+			mass, speed, headwind and gradient.</h4>
+		
+		<p>Enter mass of bike and rider.: <input id="Mass_br" size="4" value=75></p>
+		<p>Enter road speed in kph......: <input id="Road_speed" size="4" value=20></p>
+		<p>Enter headwind in kph........: <input id="headwind" size="4" value=0></p>
+		<p>Enter gradient as a %age.....: <input id="gradient" size="4" value=0></p>
+
+		<button id="Calculate">Calculate</button>
+
+	</div>
+	<h2><div id="result" align="center"></div></h2>
+	<h4><div id="list" align="center" ></div></h4>
+	<div id="graphic" align="center">
+      <!-- chart header in chartjs script -->
+      <canvas id="myChart" ></canvas>
+    </div>
+
+<script src="cyclepower_3.js"></script>
+
+</body>
+</html>
